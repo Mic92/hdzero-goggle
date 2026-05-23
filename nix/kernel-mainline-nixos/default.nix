@@ -16,7 +16,7 @@ let
   src = builtins.fetchGit {
     url = "file:///home/joerg/git/linux";
     ref = "v536-port";
-    rev = "a57b7e90862c4f4fab808db1ae1b11b71279c783";
+    rev = "bf1ae90524fd6bd74f2f7868e6fe9c53807fbd3c";
   };
   # sun8i_v536_defconfig expanded to a full .config plus the NixOS fragment.
   configfile = stdenv.mkDerivation {
