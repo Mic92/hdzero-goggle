@@ -109,6 +109,8 @@ in
     pkgs.usbutils
     pkgs.vim
     pkgs.busybox
+    pkgs.drm_info
+    pkgs.libdrm.bin # modetest
   ];
 
   nix.settings.experimental-features = [
