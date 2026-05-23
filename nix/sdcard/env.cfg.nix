@@ -18,7 +18,7 @@ nor_root=/dev/mtdblock2
 
 setargs_nor=setenv bootargs earlycon=''${earlycon} initcall_debug=''${initcall_debug} console=''${console} loglevel=''${loglevel} root=''${nor_root}  init=''${init} partitions=''${partitions} cma=''${cma} ion_carveout_list=''${ion_carveout_list}
 setargs_nand=setenv bootargs earlycon=''${earlycon} initcall_debug=''${initcall_debug} console=''${console} loglevel=''${loglevel} root=''${nand_root} init=''${init} partitions=''${partitions} cma=''${cma} ion_carveout_list=''${ion_carveout_list}
-setargs_mmc=setenv bootargs earlycon=''${earlycon} initcall_debug=''${initcall_debug} console=''${console} loglevel=''${loglevel} root=''${mmc_root} init=''${init} partitions=''${partitions} cma=''${cma} ion_carveout_list=''${ion_carveout_list} rootwait
+setargs_mmc=setenv bootargs earlycon=''${earlycon} initcall_debug=''${initcall_debug} console=''${console} loglevel=''${loglevel} root=''${mmc_root} init=''${init} partitions=''${partitions} cma=''${cma} ion_carveout_list=''${ion_carveout_list} rootwait clk_ignore_unused
 
 boot_normal=${bootNormal}
 boot_recovery=sunxi_flash read 45000000 recovery;bootm 45000000 recovery
